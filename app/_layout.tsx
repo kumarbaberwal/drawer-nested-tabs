@@ -6,8 +6,9 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{
       flex: 1,
     }}>
-      <Stack>
+      <Stack screenOptions={{ headerBackTitle: "Back" }}>
         <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+        <Stack.Screen name="outside" options={{ title: "Outside Page", headerTitleAlign: "center" }} />
       </Stack>
     </GestureHandlerRootView>
   );
