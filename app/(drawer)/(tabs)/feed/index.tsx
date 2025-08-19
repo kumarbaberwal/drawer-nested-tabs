@@ -9,17 +9,17 @@ export default function index() {
       justifyContent: "center",
       alignItems: "center"
     }}>
-      <Link href="/(drawer)/(tabs)/feed/1" >
+      <Link href={{ pathname: "/(drawer)/(tabs)/feed/[id]", params: { id: 1 } }} >
         <Text>
           Feed 1
         </Text>
       </Link>
-      <Link href="/(drawer)/(tabs)/feed/2" >
+      <Link href={{ pathname: "/(drawer)/(tabs)/feed/[id]", params: { id: 2 } }}>
         <Text>
           Feed 2
         </Text>
       </Link>
-      <Link href="/(drawer)/(tabs)/feed/3" >
+      <Link href={{ pathname: "/(drawer)/(tabs)/feed/[id]", params: { id: 3 } }} >
         <Text>
           Feed 3
         </Text>
